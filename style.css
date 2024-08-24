@@ -2,8 +2,14 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    list-style-type: none;
 }
 
+/* every section should have side margins equal */
+.section {
+    margin:0 40px;
+}
+/*  categories */
 .category-section{
     border-top: 1px solid lightgray;
     margin-top: 100px; 
@@ -13,10 +19,9 @@
 .category-list{
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px;
-    padding: 20px;
+    margin: 20px 0;
+    /* padding: 20px; */
     color: gray;
-    list-style-type: none;
 }
 
 .category-type{
@@ -27,4 +32,57 @@
 .category-type img{
     width : 25px;
     margin-bottom:4px;
+}
+
+/* hotel list */
+.hotel-section{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.hotel-card{
+    width: 320px;
+    position: relative;
+}
+
+.hotel-details{
+    margin-top:5px;
+}
+
+.hotel-card-image{
+    width:100%;
+    height: 270px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.hotel-card .hotel-name{
+    font-size: 18px;
+}
+
+.hotel-card .host{
+    color: gray
+}
+
+.card-btn{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:15px;
+}
+
+.card-btn button{
+    padding: 10px 20px;
+    border-radius: 26px;
+    background-color: rgb(234, 231, 231);
+    margin: 0 10px;
+    border:none
+}
+
+.experience{
+    margin-top:30px;
 }
