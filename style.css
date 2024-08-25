@@ -7,7 +7,7 @@
 
 /* every section should have side margins equal */
 .section {
-    margin:0 40px;
+    margin:0 75px;
 }
 /*  categories */
 .category-section{
@@ -44,7 +44,7 @@
 
 
 .hotel-card{
-    width: 320px;
+    width: 300px;
     position: relative;
 }
 
@@ -85,4 +85,47 @@
 
 .experience{
     margin-top:30px;
+}
+
+.footer-section{
+    background-color: #dddddd;
+    margin-top:40px;
+    padding-bottom:5px;
+    border-top: 1px solid lightgray
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 280px;
+    margin: 50px 75px;
+    padding: 50px 0;
+    line-height: 30px;
+    color:#6a6a6a;
+    border-bottom: 1px solid gray;
+}
+
+.footer li:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.footer-list .footer-list-header{
+color: black
+}
+
+.footer-contact-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact-section li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-contact-left, .footer-contact-right{
+    display: flex;
+    gap: 15px;
+    text-align: center;
 }
